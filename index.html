@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="./css/style.min.css">
   <!-- End Styles -->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+  <!-- Добавляем стили из CDN -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body class="body main">
   <header class="header">
@@ -310,15 +312,37 @@
       </div>
     </div>
   </section>
-  <section class="main__suppliers"></section>
+  <section class="main__suppliers">
+    <div class="container main-suppliers">
+      <h2 class="main__subtitle">Поставщики</h2>
+      <div id="mainSuppliersSlider" class="main-suppliers__slider">
+        <div class="main-suppliers__elem">
+
+        </div>
+        <div class="main-suppliers__elem"></div>
+        <div class="main-suppliers__elem"></div>
+        <div class="main-suppliers__elem"></div>
+        <div class="main-suppliers__elem"></div>
+        <div class="main-suppliers__elem"></div>
+      </div>
+    </div>
+  </section>
   <section class="main__projects"></section>
   <section class="main__partners"></section>
   <section class="main__pre-footer"></section>
   <footer class="footer"></footer>
   <!-- Start Scripts -->
   <script src="./js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/main.js"></script>
   <!-- End Scripts -->
+  <script>
+    $('#mainSuppliersSlider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3
+    });
+  </script>
 </body>
 </html>
