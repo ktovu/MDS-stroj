@@ -26,8 +26,9 @@
   }
 
   &__mds {
-    padding: 20px 0;
+    padding: 101px 0 101px;
     background-color: @color-tangaroa;
+    margin-bottom: 104px;
   }
 }
 
@@ -182,22 +183,28 @@
 
 .main-mds {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 0;
+  max-height: 330px;
+  position: relative;
 
   &__img {
     border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 
   &__title {
     .font-sizes(@color-white, 35px, 500, 27px);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 50px;
   }
 
   &__descr {
-    flex: 1;
+    flex: 0 1 660px;
     margin-left: 114px;
 
     > svg {
@@ -209,6 +216,10 @@
   }
 
   &__list {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 50px;
 
     > li {
       .font-sizes(@color-white, 24px, 500, 26px);
