@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Главная</title>
+  <!-- Libs -->
+  <link rel="stylesheet" href="./css/reset.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+  <!-- End Libs -->
+  <!-- Fonts -->
+  <link rel="stylesheet" href="./fonts/stylesheet.css">
+  <!-- End Fonts -->
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/style.min.css">
+  <!-- End Styles -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+</head>
+<body class="body main">
+  <header class="header">
+    <div class="header__container">
+      <div class="header__left-side">
+        <nav class="header__nav">
+          <div class="header__nav-button">
+            <svg class="header__nav-button-icon">
+              <use xlink:href="./img/sprite.svg#hamburger"></use>
+            </svg>
+            <span class="header__nav-button-title">Меню</span>
+          </div>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-text" href="#">О компании</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-text" href="#">Услуги</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-text" href="#">Готовые проекты</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="header__soc">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">twitter</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">whats’app</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">instagram</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__center-side">
+        <a class="header__logo" href="/">
+          <img class="header__logo-img" src="./img/logo.png" alt="logo">
+          <span class="header__logo-title">МДС-Строй</span>
+        </a>
+      </div>
+      <div class="header__right-side">
+        <div class="header__contacts">
+          <a class="header__contacts-tel" href="tel:+78008008008">+7 (800) 800-80-08</a>
+          <a class="header__contacts-mail" href="mailto:login@gmail.com">login@gmail.com</a>
+        </div>
+        <div class="header__callback">
+          <div class="header__callback-container">
+            <span class="header__callback-title">Обратный звонок</span>
+            <div class="header__callback-icon">
+              <div class="header__callback-circle header__callback-circle_l"></div>
+              <div class="header__callback-circle header__callback-circle_m"></div>
+              <div class="header__callback-circle header__callback-circle_s"></div>
+              <svg class="header__callback-svg">
+                <use xlink:href="./img/sprite.svg#tel"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="main__top">
+    <div class="container main-top-container">
+      <div id="topSliderIndicators" class="main-top-slider carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <a class="carousel-indicators__prev" href="#topSliderIndicators" role="button" data-slide="prev">
+            <svg class="carousel-indicators__arrow carousel-indicators__arrow_left">
+              <use xlink:href="./img/sprite.svg#arrow-left"></use>
+            </svg>
+          </a>
+          <li data-target="#topSliderIndicators" data-slide-to="0" class="active">
+            <span>01</span>
+          </li>
+          <li data-target="#topSliderIndicators" data-slide-to="1">
+            <span>02</span>
+          </li>
+          <li data-target="#topSliderIndicators" data-slide-to="2">
+            <span>03</span>
+          </li>
+          <a class="carousel-indicators__next" href="#topSliderIndicators" role="button" data-slide="next">
+            <svg class="carousel-indicators__arrow carousel-indicators__arrow_right">
+              <use xlink:href="./img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h1 class="main-top-slider__title">Повседневная практика</h1>
+            <p class="main-top-slider__descr">Показывает что существующая теория является качественно новой ступенью своевременного выполнения задачи. Также как постоянный количественный рост и сфера нашей активности предопределяет высокую потребность</p>
+          </div>
+          <div class="carousel-item">
+            <h1 class="main-top-slider__title">Повседневная практика</h1>
+            <p class="main-top-slider__descr">Показывает что существующая теория является качественно новой ступенью своевременного выполнения задачи. Также как постоянный количественный рост и сфера нашей активности предопределяет высокую потребность</p>
+          </div>
+          <div class="carousel-item">
+            <h1 class="main-top-slider__title">Повседневная практика</h1>
+            <p class="main-top-slider__descr">Показывает что существующая теория является качественно новой ступенью своевременного выполнения задачи. Также как постоянный количественный рост и сфера нашей активности предопределяет высокую потребность</p>
+          </div>
+        </div>
+      </div>
+      <form class="main-top-form" action="">
+        <div class="main-top-form__title">Оставьте заявку</div>
+        <div class="main-top-form__descr">И получите файл с 5 этапами согласования нового объекта</div>
+        <div class="main-top-form__field form-field">
+          <input class="form-field__input" type="text" required />
+          <span class="form-field__label">Имя *</span>
+        </div>
+        <div class="main-top-form__field form-field">
+          <input class="form-field__input" type="tel" required>
+          <span class="form-field__label">Номер телефона *</span>
+        </div>
+        <div class="main-top-form__field form-field">
+          <input class="form-field__input" type="text" required />
+          <span class="form-field__label">Email *</span>
+        </div>
+        <div class="main-top-form__checkbox checkbox-confirm">
+          <input class="checkbox-confirm__input" type="checkbox" required>
+          <div class="checkbox-confirm__container"></div>
+          <p class="checkbox-confirm__text">Я даю свое согласие на обработку <a href="#">персональных данных</a></p>
+        </div>
+        <button class="main-top-form__button button-animate" type="submit">
+          <span class="button-animate__text">Получить файл</span>
+          <div class="button-animate__hover"></div>
+        </button>
+      </form>
+      <div class="main-top-mouse">
+        <svg class="main-top-mouse__elem">
+          <use xlink:href="./img/sprite.svg#mouse"></use>
+        </svg>
+        <span class="main-top-mouse__text">скролл</span>
+      </div>
+    </div>
+  </section>
+  <section class="main__services">
+    <div class="container">
+      <h2 class="main__subtitle">Услуги</h2>
+    </div>
+    <div class="container main-services">
+      <a class="main-services__elem" href="#">
+        <div class="main-services__img">
+          <img src="./img/services/montag-vodoprovoda.jpg">
+        </div>
+        <span class="main-services__name main-services__name_water">
+          <svg>
+            <use xlink:href="./img/sprite.svg#waves"></use>
+          </svg>
+          Монтаж водопровода
+        </span>
+      </a>
+      <a class="main-services__elem" href="#">
+        <div class="main-services__img">
+          <img src="./img/services/montag-kanalizaczii.jpg">
+        </div>
+        <span class="main-services__name main-services__name_water">
+          <svg>
+            <use xlink:href="./img/sprite.svg#waves"></use>
+          </svg>
+          Монтаж канализации
+        </span>
+      </a>
+      <a class="main-services__elem" href="#">
+        <div class="main-services__img">
+          <img src="./img/services/ustanovka-pvns-i-itp.jpg">
+        </div>
+        <span class="main-services__name main-services__name_water">
+          <svg>
+            <use xlink:href="./img/sprite.svg#waves"></use>
+          </svg>
+          Установка ПВНС и ИТП
+        </span>
+      </a>
+      <a class="main-services__elem" href="#">
+        <div class="main-services__img">
+          <img src="./img/services/montag-sistem-otoplenia.jpg" alt="">
+        </div>
+        <span class="main-services__name main-services__name_warm">
+          <svg>
+            <use xlink:href="./img/sprite.svg#waves"></use>
+          </svg>
+          Монтаж систем отопления
+        </span>
+      </a>
+      <a class="main-services__elem" href="#">
+        <div class="main-services__img">
+          <img src="./img/services/promivka.jpg">
+        </div>
+        <span class="main-services__name main-services__name_water">
+          <svg>
+            <use xlink:href="./img/sprite.svg#waves"></use>
+          </svg>
+          Промывка, опрессовка и подготовка к отопительному сезону
+        </span>
+      </a>
+      <a class="main-services__elem" href="#">
+        <div class="main-services__img">
+          <img src="./img/services/montag-kotelnih.jpg">
+        </div>
+        <span class="main-services__name main-services__name_warm">
+          <svg>
+            <use xlink:href="./img/sprite.svg#waves"></use>
+          </svg>
+          Монтаж котельных
+        </span>
+      </a>
+    </div>
+    <div class="container main-services-info">
+      <div class="main-services-info__elem">
+        <svg>
+          <use xlink:href="./img/sprite.svg#post-title"></use>
+        </svg>
+        <p class="main-services-info__text">Произведём расчёт одопотребления для получения тех. условий в Водоканале</p>
+        <div class="main-services-info__bottom">
+          <span class="main-services-info__price">4000</span>руб.
+        </div>
+        <a class="main-services-info__button" href="#">
+            подробнее
+            <svg>
+              <use xlink:href="./img/sprite.svg#post-arrow"></use>
+            </svg>
+        </a>
+      </div>
+      <div class="main-services-info__elem main-services-info__elem_light">
+        <svg>
+          <use xlink:href="./img/sprite.svg#post-title"></use>
+        </svg>
+        <p class="main-services-info__text">Проведем аудит проектных решений </p>
+        <div class="main-services-info__bottom">
+          <span class="main-services-info__price">500</span>руб.
+        </div>
+        <a class="main-services-info__button" href="#">
+            подробнее
+            <svg>
+              <use xlink:href="./img/sprite.svg#post-arrow"></use>
+            </svg>
+        </a>
+      </div>
+      <div class="main-services-info__elem main-services-info__elem_dark">
+        <svg>
+          <use xlink:href="./img/sprite.svg#post-title"></use>
+        </svg>
+        <p class="main-services-info__text">Согласуем проект вашего водомерного узла</p>
+        <div class="main-services-info__bottom">
+          <span class="main-services-info__price">500</span>руб.
+        </div>
+        <a class="main-services-info__button" href="#">
+            подробнее
+            <svg>
+              <use xlink:href="./img/sprite.svg#post-arrow"></use>
+            </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="main__mds">
+    <div class="container main-mds">
+      <img src="./img/we-are.jpg" class="main-mds__img">
+      <div class="main-mds__descr">
+        <svg>
+          <use xlink:href="./img/sprite.svg#post-title"></use>
+        </svg>
+        <h2 class="main-mds__title">МДС-СТРОЙ это:</h2>
+        <ul class="main-mds__list">
+          <li>
+            <svg>
+              <use xlink:href="./img/sprite.svg#helmet"></use>
+            </svg>
+            Профессионалы
+          </li>
+          <li>
+            <svg>
+              <use xlink:href="./img/sprite.svg#stopwatch"></use>
+            </svg>
+            Сдача работ в срок
+          </li>
+          <li>
+            <svg>
+              <use xlink:href="./img/sprite.svg#helmet"></use>
+            </svg>
+            Большой опыт
+          </li>
+          <li>
+            <svg>
+              <use xlink:href="./img/sprite.svg#diamond"></use>
+            </svg>
+            Высокое качество
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="main__suppliers"></section>
+  <section class="main__projects"></section>
+  <section class="main__partners"></section>
+  <section class="main__pre-footer"></section>
+  <footer class="footer"></footer>
+  <!-- Start Scripts -->
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+  <!-- End Scripts -->
+</body>
+</html>

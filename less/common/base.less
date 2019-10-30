@@ -1,0 +1,84 @@
+@import "./vars";
+
+input,
+button {
+  outline: none;
+}
+
+.body {
+  min-width: 320px;
+  min-height: 100vh;
+  max-width: 1920px;
+  background-color: @color-white;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes fadeOut {
+
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@-webkit-keyframes bounceMouse {
+
+  0% {
+    bottom: 70px;
+  }
+
+  12% {
+    bottom: 73px;
+  }
+
+  25% {
+    bottom: 75px;
+  }
+
+  37% {
+    bottom: 78px;
+  }
+
+  50% {
+    bottom: 80px;
+  }
+
+  62% {
+    bottom: 78px;
+  }
+
+  75% {
+    bottom: 75px;
+  }
+
+  87% {
+    bottom: 73px;
+  }
+
+  100% {
+    bottom: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .container {
+    max-width: 1440px;
+  }
+}
