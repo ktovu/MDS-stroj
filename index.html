@@ -15,7 +15,6 @@
   <!-- Styles -->
   <link rel="stylesheet" href="./css/style.min.css">
   <!-- End Styles -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
   <!-- Добавляем стили из CDN -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
@@ -85,42 +84,22 @@
   </header>
   <section class="main__top">
     <div class="container main-top-container">
-      <div id="topSliderIndicators" class="main-top-slider carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <a class="carousel-indicators__prev" href="#topSliderIndicators" role="button" data-slide="prev">
-            <svg class="carousel-indicators__arrow carousel-indicators__arrow_left">
-              <use xlink:href="./img/sprite.svg#arrow-left"></use>
-            </svg>
-          </a>
-          <li data-target="#topSliderIndicators" data-slide-to="0" class="active">
-            <span>01</span>
-          </li>
-          <li data-target="#topSliderIndicators" data-slide-to="1">
-            <span>02</span>
-          </li>
-          <li data-target="#topSliderIndicators" data-slide-to="2">
-            <span>03</span>
-          </li>
-          <a class="carousel-indicators__next" href="#topSliderIndicators" role="button" data-slide="next">
-            <svg class="carousel-indicators__arrow carousel-indicators__arrow_right">
-              <use xlink:href="./img/sprite.svg#arrow-right"></use>
-            </svg>
-          </a>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+      <div class="main-top-slider">
+        <div id="topSliderIndicators" >
+          <div>
             <h1 class="main-top-slider__title">Повседневная практика</h1>
             <p class="main-top-slider__descr">Показывает что существующая теория является качественно новой ступенью своевременного выполнения задачи. Также как постоянный количественный рост и сфера нашей активности предопределяет высокую потребность</p>
           </div>
-          <div class="carousel-item">
+          <div>
             <h1 class="main-top-slider__title">Повседневная практика</h1>
             <p class="main-top-slider__descr">Показывает что существующая теория является качественно новой ступенью своевременного выполнения задачи. Также как постоянный количественный рост и сфера нашей активности предопределяет высокую потребность</p>
           </div>
-          <div class="carousel-item">
+          <div>
             <h1 class="main-top-slider__title">Повседневная практика</h1>
             <p class="main-top-slider__descr">Показывает что существующая теория является качественно новой ступенью своевременного выполнения задачи. Также как постоянный количественный рост и сфера нашей активности предопределяет высокую потребность</p>
           </div>
         </div>
+        <div class="main-top-slider__nav"></div>
       </div>
       <form class="main-top-form" action="">
         <div class="main-top-form__title">Оставьте заявку</div>
@@ -317,14 +296,40 @@
       <h2 class="main__subtitle">Поставщики</h2>
       <div id="mainSuppliersSlider" class="main-suppliers__slider">
         <div class="main-suppliers__elem">
-
+          <img src="./img/postavshiki/бакси.png">
         </div>
-        <div class="main-suppliers__elem"></div>
-        <div class="main-suppliers__elem"></div>
-        <div class="main-suppliers__elem"></div>
-        <div class="main-suppliers__elem"></div>
-        <div class="main-suppliers__elem"></div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/грундфос.png">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/даб.png">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/данфосс.png">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/ижторгметалл.png">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/прадо.jpg">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/про аква.jpg">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/рехау.jpg">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/ртг.png">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/санекст.jpg">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/упонор.png">
+        </div>
       </div>
+      <div class="main-suppliers__nav"></div>
     </div>
   </section>
   <section class="main__projects"></section>
@@ -334,14 +339,57 @@
   <!-- Start Scripts -->
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
+  <!-- <script src="./js/bootstrap.min.js"></script> -->
   <script src="./js/main.js"></script>
   <!-- End Scripts -->
   <script>
-    $('#mainSuppliersSlider').slick({
+    $('#topSliderIndicators').slick({
+      dots: true,
+      dotsClass: 'main-top-slider__dots',
+      prevArrow: `
+            <span class="main-top-slider__prevArrow">
+              <svg class="main-top-slider__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-prev-thin"></use>
+              </svg>
+            </span>
+      `,
+      nextArrow: `
+            <span class="main-top-slider__nextArrow">
+              <svg class="main-top-slider__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-next-thin"></use>
+              </svg>
+            </span>
+      `,
+      appendArrows: '.main-top-slider__nav',
+      appendDots: '.main-top-slider__nav',
       infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      swipe: true
+    });
+    $('#mainSuppliersSlider').slick({
+      dots: true,
+      dotsClass: 'main-suppliers__dots',
+      prevArrow: `
+            <span class="main-suppliers__prevArrow">
+              <svg class="main-suppliers__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-prev-thin"></use>
+              </svg>
+            </span>
+      `,
+      nextArrow: `
+            <span class="main-suppliers__nextArrow">
+              <svg class="main-suppliers__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-next-thin"></use>
+              </svg>
+            </span>
+      `,
+      appendArrows: '.main-suppliers__nav',
+      appendDots: '.main-suppliers__nav',
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      swipe: true
     });
   </script>
 </body>
