@@ -38,6 +38,10 @@
   &__projects {
     padding: 117px 0;
     background-color: @color-anti-flash-white;
+
+    &_white {
+      background-color: @color-white;
+    }
   }
 
   &__partners {
@@ -1141,5 +1145,90 @@
     height: 19px;
     fill: transparent;
     stroke: @color-white;
+  }
+}
+
+.other-page {
+
+  &__title {
+    .font-sizes(@color-endeavour, 46px, 500, 62px);
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    padding-top: 48px;
+    background-image: url("../img/decor/post-title_blue.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    .font-sizes(@color-eerie-black, 18px, 400, 27px);
+    opacity: 0.75;
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    .font-sizes(@color-tangaroa, 24px, 500, 26px);
+    margin-bottom: 15px;
+  }
+
+  &__div {
+    display: flex;
+  }
+
+  &__button {
+    text-decoration: none;
+    display: block;
+    width: 230px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 67px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 10px;
+
+    &_blue {
+      border: 1px solid @color-endeavour;
+      background: @color-endeavour;
+
+      .button-animate__hover {
+        background-color: @color-white;
+      }
+
+      .button-animate__text {
+        color: @color-white;
+      }
+
+      &:hover > .button-animate__text {
+        color: @color-endeavour;
+        font-weight: 600;
+      }
+    }
+
+    &_white {
+      border: 1px solid @color-endeavour;
+      background: @color-white;
+
+      .button-animate__hover {
+        background-color: @color-endeavour;
+      }
+
+      .button-animate__text {
+        color: @color-endeavour;
+      }
+
+      &:hover > .button-animate__text {
+        color: @color-white;
+        font-weight: 600;
+      }
+    }
+
+    &:hover > .button-animate__hover {
+      width: 100%;
+      height: 400%;
+    }
   }
 }

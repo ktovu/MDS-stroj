@@ -1,0 +1,68 @@
+@import "../common/base";
+@import "../common/vars";
+@import "../common/mixins";
+
+.about-company {
+  padding: 117px 0 0;
+  background-color: @color-anti-flash-white;
+
+  &__container {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/boss.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+
+  &__descr {
+    width: 50%;
+    padding: 118px 0 118px 27px;
+  }
+
+  &__stats {
+    margin: 156px 0 134px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__stats-elem {
+    max-width: 358px;
+  }
+
+  &__stats-title {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 19px;
+  }
+
+  &__stats-num {
+    .font-sizes(@color-eerie-black, 100px, 600, 100px);
+    letter-spacing: -0.05em;
+    color: @color-bright-cerulean;
+    margin-right: 15px;
+  }
+
+  &__stats-text {
+    .font-sizes(@color-tangaroa, 24px, 600, 24px);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+  }
+
+  &__stats-descr {
+    .font-sizes(@color-eerie-black, 18px, 400, 27px);
+    opacity: 0.75;
+  }
+}

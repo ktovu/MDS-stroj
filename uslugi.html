@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>О компании</title>
+  <!-- Libs -->
+  <link rel="stylesheet" href="./css/reset.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+  <!-- End Libs -->
+  <!-- Fonts -->
+  <link rel="stylesheet" href="./fonts/stylesheet.css">
+  <!-- End Fonts -->
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/style.min.css">
+  <!-- End Styles -->
+  <!-- Добавляем стили из CDN -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body class="body main">
+  <header class="header header_rel header_grey">
+    <div class="header__container">
+      <div class="header__left-side">
+        <nav class="header__nav">
+          <div class="header__nav-button">
+            <svg class="header__nav-button-icon header__nav-button-icon_black">
+              <use xlink:href="./img/sprite.svg#hamburger"></use>
+            </svg>
+            <span class="header__nav-button-title header__nav-button-title_black">Меню</span>
+          </div>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-text header__nav-text_black" href="./company.html">О компании</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-text header__nav-text_black" href="./uslugi.html">Услуги</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-text header__nav-text_black" href="./object.html">Готовые проекты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__center-side header__center-side_black">
+        <a class="header__logo" href="/">
+          <img class="header__logo-img" src="./img/logo.png" alt="logo">
+          <span class="header__logo-title header__logo-title_black">МДС-Строй</span>
+        </a>
+      </div>
+      <div class="header__right-side">
+        <div class="header__contacts">
+          <a class="header__contacts-tel header__contacts-tel_black" href="tel:+78008008008">+7 (800) 800-80-08</a>
+          <a class="header__contacts-mail header__contacts-mail_black" href="mailto:login@gmail.com">login@gmail.com</a>
+        </div>
+        <div class="header__callback">
+          <div class="header__callback-container">
+            <span class="header__callback-title header__callback-title_black">Обратный звонок</span>
+            <div class="header__callback-icon">
+              <div class="header__callback-circle header__callback-circle_l"></div>
+              <div class="header__callback-circle header__callback-circle_m"></div>
+              <div class="header__callback-circle header__callback-circle_s"></div>
+              <svg class="header__callback-svg">
+                <use xlink:href="./img/sprite.svg#tel"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="main__services">
+    <div class="container">
+      <h2 class="main__subtitle">Услуги</h2>
+    </div>
+    <div class="container main-services">
+      <a class="main-services__elem" href="#">
+        <div class="main-services__img">
+          <img src="./img/services/montag-vodoprovoda.jpg">
+        </div>
+        <span class="main-services__name main-services__name_water">
+          <svg>
+            <use xlink:href="./img/sprite.svg#waves"></use>
+          </svg>
+          Монтаж водопровода
+        </span>
+      </a>
+      <a class="main-services__elem" href="#">
+        <div class="main-services__img">
+          <img src="./img/services/montag-kanalizaczii.jpg">
+        </div>
+        <span class="main-services__name main-services__name_water">
+          <svg>
+            <use xlink:href="./img/sprite.svg#waves"></use>
+          </svg>
+          Монтаж канализации
+        </span>
+      </a>
+      <a class="main-services__elem" href="#">
+        <div class="main-services__img">
+          <img src="./img/services/ustanovka-pvns-i-itp.jpg">
+        </div>
+        <span class="main-services__name main-services__name_water">
+          <svg>
+            <use xlink:href="./img/sprite.svg#waves"></use>
+          </svg>
+          Установка ПВНС и ИТП
+        </span>
+      </a>
+      <a class="main-services__elem" href="#">
+        <div class="main-services__img">
+          <img src="./img/services/montag-sistem-otoplenia.jpg" alt="">
+        </div>
+        <span class="main-services__name main-services__name_warm">
+          <svg>
+            <use xlink:href="./img/sprite.svg#waves"></use>
+          </svg>
+          Монтаж систем отопления
+        </span>
+      </a>
+      <a class="main-services__elem" href="#">
+        <div class="main-services__img">
+          <img src="./img/services/promivka.jpg">
+        </div>
+        <span class="main-services__name main-services__name_water">
+          <svg>
+            <use xlink:href="./img/sprite.svg#waves"></use>
+          </svg>
+          Промывка, опрессовка и подготовка к отопительному сезону
+        </span>
+      </a>
+      <a class="main-services__elem" href="#">
+        <div class="main-services__img">
+          <img src="./img/services/montag-kotelnih.jpg">
+        </div>
+        <span class="main-services__name main-services__name_warm">
+          <svg>
+            <use xlink:href="./img/sprite.svg#waves"></use>
+          </svg>
+          Монтаж котельных
+        </span>
+      </a>
+    </div>
+    <div class="container main-services-info">
+      <div class="main-services-info__elem">
+        <svg>
+          <use xlink:href="./img/sprite.svg#post-title"></use>
+        </svg>
+        <p class="main-services-info__text">Произведём расчёт одопотребления для получения тех. условий в Водоканале</p>
+        <div class="main-services-info__bottom">
+          <span class="main-services-info__price">4000</span>руб.
+        </div>
+        <a class="main-services-info__button" href="#">
+            подробнее
+            <svg>
+              <use xlink:href="./img/sprite.svg#post-arrow"></use>
+            </svg>
+        </a>
+      </div>
+      <div class="main-services-info__elem main-services-info__elem_light">
+        <svg>
+          <use xlink:href="./img/sprite.svg#post-title"></use>
+        </svg>
+        <p class="main-services-info__text">Проведем аудит проектных решений </p>
+        <div class="main-services-info__bottom">
+          <span class="main-services-info__price">500</span>руб.
+        </div>
+        <a class="main-services-info__button" href="#">
+            подробнее
+            <svg>
+              <use xlink:href="./img/sprite.svg#post-arrow"></use>
+            </svg>
+        </a>
+      </div>
+      <div class="main-services-info__elem main-services-info__elem_dark">
+        <svg>
+          <use xlink:href="./img/sprite.svg#post-title"></use>
+        </svg>
+        <p class="main-services-info__text">Согласуем проект вашего водомерного узла</p>
+        <div class="main-services-info__bottom">
+          <span class="main-services-info__price">500</span>руб.
+        </div>
+        <a class="main-services-info__button" href="#">
+            подробнее
+            <svg>
+              <use xlink:href="./img/sprite.svg#post-arrow"></use>
+            </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__year">© 2019 мдс-строй</div>
+      <div class="footer__policy">
+        <a href="#">политика<br /> конфиденциальности</a>
+      </div>
+      <div class="footer__menu">
+        <ul class="footer__menu-list">
+          <li  class="footer__menu-item">
+            <a href="./company.html">О компании</a>
+          </li>
+          <li  class="footer__menu-item">
+            <a href="./uslugi.html">Услуги</a>
+          </li>
+          <li  class="footer__menu-item">
+            <a href="./object.html">Готовые проекты</a>
+          </li>
+          <li  class="footer__menu-item">
+            <a href="#">Новости</a>
+          </li>
+          <li  class="footer__menu-item">
+            <a href="#">Отзывы</a>
+          </li>
+          <li  class="footer__menu-item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__tel">
+        <a class="footer__contacts-tel" href="tel:+78008008008">+7 (800) 800-80-08</a>
+        <a class="footer__contacts-mail" href="mailto:login@gmail.com">login@gmail.com</a>
+        <div class="footer__callback-icon">
+          <div class="footer__callback-circle footer__callback-circle_l"></div>
+          <div class="footer__callback-circle footer__callback-circle_m"></div>
+          <div class="footer__callback-circle footer__callback-circle_s"></div>
+          <svg class="footer__callback-svg">
+            <use xlink:href="./img/sprite.svg#tel"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="footer__sh-menu">
+        <ul class="footer__sh-menu-list">
+          <li>
+            <a href="#">twitter</a>
+          </li>
+          <li>
+            <a href="#">whats’app</a>
+          </li>
+          <li>
+            <a href="#">instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__callback">
+        <button class="button-animate" type="submit">
+          <span class="button-animate__text">написать нам</span>
+          <div class="button-animate__hover"></div>
+        </button>
+      </div>
+      <div class="footer__made-by">
+        <a href="#">Разработано в “Electron”</a>
+      </div>
+    </div>
+    <div class="scroll-top">
+      <svg class="scroll-top__svg">
+        <use xlink:href="./img/sprite.svg#arrow-top-thin"></use>
+      </svg>
+    </div>
+  </footer>
+  <!-- Start Scripts -->
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- <script src="./js/bootstrap.min.js"></script> -->
+  <script src="./js/main.js"></script>
+  <!-- End Scripts -->
+  <script>
+    $('#topSliderIndicators').slick({
+      dots: true,
+      dotsClass: 'main-top-slider__dots',
+      prevArrow: `
+            <span class="main-top-slider__prevArrow">
+              <svg class="main-top-slider__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-prev-thin"></use>
+              </svg>
+            </span>
+      `,
+      nextArrow: `
+            <span class="main-top-slider__nextArrow">
+              <svg class="main-top-slider__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-next-thin"></use>
+              </svg>
+            </span>
+      `,
+      appendArrows: '.main-top-slider__nav',
+      appendDots: '.main-top-slider__nav',
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      swipe: true
+    });
+    $('#mainSuppliersSlider').slick({
+      dots: true,
+      dotsClass: 'main-suppliers__dots',
+      prevArrow: `
+            <span class="main-suppliers__prevArrow">
+              <svg class="main-suppliers__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-prev-thin"></use>
+              </svg>
+            </span>
+      `,
+      nextArrow: `
+            <span class="main-suppliers__nextArrow">
+              <svg class="main-suppliers__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-next-thin"></use>
+              </svg>
+            </span>
+      `,
+      appendArrows: '.main-suppliers__nav',
+      appendDots: '.main-suppliers__nav',
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      swipe: true
+    });
+    $('#mainProjectsSlider').slick({
+      dots: true,
+      dotsClass: 'main-projects__dots',
+      prevArrow: `
+            <span class="main-projects__prevArrow">
+              <svg class="main-projects__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-prev-thin"></use>
+              </svg>
+            </span>
+      `,
+      nextArrow: `
+            <span class="main-projects__nextArrow">
+              <svg class="main-projects__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-next-thin"></use>
+              </svg>
+            </span>
+      `,
+      appendArrows: '.main-projects__nav',
+      appendDots: '.main-projects__nav',
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      swipe: true,
+      centerPadding: '100px'
+    });
+    $('#mainPartnersSlider').slick({
+      dots: true,
+      dotsClass: 'main-partners__dots',
+      prevArrow: `
+            <span class="main-partners__prevArrow">
+              <svg class="main-partners__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-prev-thin"></use>
+              </svg>
+            </span>
+      `,
+      nextArrow: `
+            <span class="main-partners__nextArrow">
+              <svg class="main-partners__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-next-thin"></use>
+              </svg>
+            </span>
+      `,
+      appendArrows: '.main-partners__nav',
+      appendDots: '.main-partners__nav',
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      swipe: true
+    });
+  </script>
+</body>
+</html>

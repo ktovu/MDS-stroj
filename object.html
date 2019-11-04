@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>О компании</title>
+  <!-- Libs -->
+  <link rel="stylesheet" href="./css/reset.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+  <!-- End Libs -->
+  <!-- Fonts -->
+  <link rel="stylesheet" href="./fonts/stylesheet.css">
+  <!-- End Fonts -->
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/style.min.css">
+  <!-- End Styles -->
+  <!-- Добавляем стили из CDN -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body class="body main">
+  <header class="header header_rel header_grey">
+    <div class="header__container">
+      <div class="header__left-side">
+        <nav class="header__nav">
+          <div class="header__nav-button">
+            <svg class="header__nav-button-icon header__nav-button-icon_black">
+              <use xlink:href="./img/sprite.svg#hamburger"></use>
+            </svg>
+            <span class="header__nav-button-title header__nav-button-title_black">Меню</span>
+          </div>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-text header__nav-text_black" href="./company.html">О компании</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-text header__nav-text_black" href="./uslugi.html">Услуги</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-text header__nav-text_black" href="./object.html">Готовые проекты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__center-side header__center-side_black">
+        <a class="header__logo" href="/">
+          <img class="header__logo-img" src="./img/logo.png" alt="logo">
+          <span class="header__logo-title header__logo-title_black">МДС-Строй</span>
+        </a>
+      </div>
+      <div class="header__right-side">
+        <div class="header__contacts">
+          <a class="header__contacts-tel header__contacts-tel_black" href="tel:+78008008008">+7 (800) 800-80-08</a>
+          <a class="header__contacts-mail header__contacts-mail_black" href="mailto:login@gmail.com">login@gmail.com</a>
+        </div>
+        <div class="header__callback">
+          <div class="header__callback-container">
+            <span class="header__callback-title header__callback-title_black">Обратный звонок</span>
+            <div class="header__callback-icon">
+              <div class="header__callback-circle header__callback-circle_l"></div>
+              <div class="header__callback-circle header__callback-circle_m"></div>
+              <div class="header__callback-circle header__callback-circle_s"></div>
+              <svg class="header__callback-svg">
+                <use xlink:href="./img/sprite.svg#tel"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="main__suppliers">
+    <div class="container main-suppliers">
+      <h2 class="main__subtitle">Готовые проекты</h2>
+      <div id="mainSuppliersSlider" class="main-suppliers__slider">
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/бакси.png">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/грундфос.png">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/даб.png">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/данфосс.png">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/ижторгметалл.png">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/прадо.jpg">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/про аква.jpg">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/рехау.jpg">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/ртг.png">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/санекст.jpg">
+        </div>
+        <div class="main-suppliers__elem">
+          <img src="./img/postavshiki/упонор.png">
+        </div>
+      </div>
+      <div class="main-suppliers__nav"></div>
+    </div>
+  </section>
+  <section class="main__pre-footer">
+    <div class="container main-pre-footer">
+      <form class="main-top-form main-pre-footer__form" action="">
+          <div class="main-top-form__title main-top-form__title_left">Как не переплачивать за инженерные системы при строительстве</div>
+          <div class="main-top-form__descr main-top-form__descr_left">Оставьте контакты и получите файл</div>
+          <div class="main-top-form__field form-field">
+            <input class="form-field__input" type="text" required />
+            <span class="form-field__label">Имя *</span>
+          </div>
+          <div class="main-top-form__field form-field">
+            <input class="form-field__input" type="tel" required>
+            <span class="form-field__label">Номер телефона *</span>
+          </div>
+          <div class="main-top-form__field form-field">
+            <input class="form-field__input" type="text" required />
+            <span class="form-field__label">Email *</span>
+          </div>
+          <div class="main-top-form__checkbox checkbox-confirm">
+            <input class="checkbox-confirm__input" type="checkbox" required>
+            <div class="checkbox-confirm__container"></div>
+            <p class="checkbox-confirm__text">Я даю свое согласие на обработку <a href="#">персональных данных</a></p>
+          </div>
+          <button class="main-top-form__button main-top-form__button_half-w main-top-form__button_left button-animate" type="submit">
+            <span class="button-animate__text">Получить файл</span>
+            <div class="button-animate__hover"></div>
+          </button>
+        </form>
+    </div>
+    <div class="main-pre-footer-map"></div>
+  </section>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__year">© 2019 мдс-строй</div>
+      <div class="footer__policy">
+        <a href="#">политика<br /> конфиденциальности</a>
+      </div>
+      <div class="footer__menu">
+        <ul class="footer__menu-list">
+          <li  class="footer__menu-item">
+            <a href="./company.html">О компании</a>
+          </li>
+          <li  class="footer__menu-item">
+            <a href="./uslugi.html">Услуги</a>
+          </li>
+          <li  class="footer__menu-item">
+            <a href="./object.html">Готовые проекты</a>
+          </li>
+          <li  class="footer__menu-item">
+            <a href="#">Новости</a>
+          </li>
+          <li  class="footer__menu-item">
+            <a href="#">Отзывы</a>
+          </li>
+          <li  class="footer__menu-item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__tel">
+        <a class="footer__contacts-tel" href="tel:+78008008008">+7 (800) 800-80-08</a>
+        <a class="footer__contacts-mail" href="mailto:login@gmail.com">login@gmail.com</a>
+        <div class="footer__callback-icon">
+          <div class="footer__callback-circle footer__callback-circle_l"></div>
+          <div class="footer__callback-circle footer__callback-circle_m"></div>
+          <div class="footer__callback-circle footer__callback-circle_s"></div>
+          <svg class="footer__callback-svg">
+            <use xlink:href="./img/sprite.svg#tel"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="footer__sh-menu">
+        <ul class="footer__sh-menu-list">
+          <li>
+            <a href="#">twitter</a>
+          </li>
+          <li>
+            <a href="#">whats’app</a>
+          </li>
+          <li>
+            <a href="#">instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__callback">
+        <button class="button-animate" type="submit">
+          <span class="button-animate__text">написать нам</span>
+          <div class="button-animate__hover"></div>
+        </button>
+      </div>
+      <div class="footer__made-by">
+        <a href="#">Разработано в “Electron”</a>
+      </div>
+    </div>
+    <div class="scroll-top">
+      <svg class="scroll-top__svg">
+        <use xlink:href="./img/sprite.svg#arrow-top-thin"></use>
+      </svg>
+    </div>
+  </footer>
+  <!-- Start Scripts -->
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- <script src="./js/bootstrap.min.js"></script> -->
+  <script src="./js/main.js"></script>
+  <!-- End Scripts -->
+  <script>
+    $('#topSliderIndicators').slick({
+      dots: true,
+      dotsClass: 'main-top-slider__dots',
+      prevArrow: `
+            <span class="main-top-slider__prevArrow">
+              <svg class="main-top-slider__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-prev-thin"></use>
+              </svg>
+            </span>
+      `,
+      nextArrow: `
+            <span class="main-top-slider__nextArrow">
+              <svg class="main-top-slider__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-next-thin"></use>
+              </svg>
+            </span>
+      `,
+      appendArrows: '.main-top-slider__nav',
+      appendDots: '.main-top-slider__nav',
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      swipe: true
+    });
+    $('#mainSuppliersSlider').slick({
+      dots: true,
+      dotsClass: 'main-suppliers__dots',
+      prevArrow: `
+            <span class="main-suppliers__prevArrow">
+              <svg class="main-suppliers__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-prev-thin"></use>
+              </svg>
+            </span>
+      `,
+      nextArrow: `
+            <span class="main-suppliers__nextArrow">
+              <svg class="main-suppliers__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-next-thin"></use>
+              </svg>
+            </span>
+      `,
+      appendArrows: '.main-suppliers__nav',
+      appendDots: '.main-suppliers__nav',
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      swipe: true
+    });
+    $('#mainProjectsSlider').slick({
+      dots: true,
+      dotsClass: 'main-projects__dots',
+      prevArrow: `
+            <span class="main-projects__prevArrow">
+              <svg class="main-projects__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-prev-thin"></use>
+              </svg>
+            </span>
+      `,
+      nextArrow: `
+            <span class="main-projects__nextArrow">
+              <svg class="main-projects__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-next-thin"></use>
+              </svg>
+            </span>
+      `,
+      appendArrows: '.main-projects__nav',
+      appendDots: '.main-projects__nav',
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      swipe: true,
+      centerPadding: '100px'
+    });
+    $('#mainPartnersSlider').slick({
+      dots: true,
+      dotsClass: 'main-partners__dots',
+      prevArrow: `
+            <span class="main-partners__prevArrow">
+              <svg class="main-partners__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-prev-thin"></use>
+              </svg>
+            </span>
+      `,
+      nextArrow: `
+            <span class="main-partners__nextArrow">
+              <svg class="main-partners__svg-arrows">
+                <use xlink:href="./img/sprite.svg#arrow-next-thin"></use>
+              </svg>
+            </span>
+      `,
+      appendArrows: '.main-partners__nav',
+      appendDots: '.main-partners__nav',
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      swipe: true
+    });
+  </script>
+</body>
+</html>
